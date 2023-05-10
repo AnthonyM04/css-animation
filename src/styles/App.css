@@ -1,3 +1,103 @@
 .navbar{
   background-color: aqua
 }
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.scale:hover {
+  transform: scale(1.1);
+}
+
+.scale-x:hover { 
+  transform: scaleX(2.3);
+}
+
+
+.rotate:hover{
+  transform: rotate(180000deg);
+  transition: 5.0s ease-in-out;
+}
+
+.skew:hover{
+  transform: skew(-45deg);
+}
+
+.skew2:hover{
+  transform: skew(-45deg, 60deg);
+}
+
+.translate:hover{
+  transform: translate(-50px, 0px);
+}
+
+.box1{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(16, 85, 119);
+  transition: 0.3s ease-in-out;
+  animation-name: bgcolorAnimate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bgcolorAnimate {
+  from{ background-color: red;}
+  to { background-color: yellow;}
+
+}
+
+.box2{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(16, 85, 119);
+  transition: 1.0s ease-in-out;
+  animation-name: bgcolor2Animate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bgcolor2Animate {
+  0% {background-color: red;}
+  25% {background-color: yellow;}
+  50% {background-color: green; transform: scale(1.5); color: green} 
+  75% {background-color: blue; transform: rotate(180deg);}
+  100% {background-color: purple; transform:skew(-45deg);}
+}
+.boxrace{
+  width: 100px;
+  height:  100px;
+  background-color: greenyellow;
+  position: relative;
+  animation: crazy 5s infinite;
+  
+}
+
+.race1 {animation-timing-function: linear;}
+.race2 {animation-timing-function: ease;}
+.race3 {animation-timing-function: ease-in;}
+.race4 {animation-timing-function: ease-out;}
+.race5 {animation-timing-function: ease-in-out;}
+
+@keyframes bgcolor3Animate {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+
+
+@keyframes crazy {
+  from {left: 0px;}
+  to {left: 1000px;}
+  0% {background-color: red;  transform:skew(-45deg)}
+  25% {background-color: yellow;}
+  50% {background-color: green; color: green} 
+  75% {background-color: blue;   transform: rotate(180000deg);
+    ;}
+  100% {background-color: purple;;}
+}
