@@ -9,9 +9,9 @@ export default function Page2() {
         <section>
         <Container>
             <Row>
-                <Col><button class='pg2-button button1'>x axis</button></Col>
-                <Col><button class='pg2-button button2'>y axis</button></Col>
-                <Col><button class='pg2-button button3'>scale</button></Col>
+                <Col><button className='pg2-button button1'>x axis</button></Col>
+                <Col><button className='pg2-button button2'>y axis</button></Col>
+                <Col><button className='pg2-button button3'>scale</button></Col>
             </Row>
 
             <Row>
@@ -21,7 +21,7 @@ export default function Page2() {
 
               <div className="profile-text">
                 <h3>Ticket to Mars</h3>
-                <a href="#" class="profile-button" rel="noreferrer">Buy Now!</a>
+                <a href="#" className="profile-button">Buy Now!</a>
               </div>
             </div>
           </Col>
