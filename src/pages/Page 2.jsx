@@ -15,14 +15,17 @@ export default function Page2() {
             </Row>
 
             <Row>
-                <div className="profile">
-                    <img src={imgRoot + "pict.webp"} alt="profile"/>
-                    <div className="profile-text">
-                        <h3>Hills</h3>
-                        <a href="" class='profile-button' rel='noreferrer'>Buy Now!</a>
-                    </div>
-                </div>
-            </Row>
+          <Col>
+            <div className="profile">
+              <img src={imgRoot+"pict.webp"} alt="profile" />
+
+              <div className="profile-text">
+                <h3>Ticket to Mars</h3>
+                <a href="#" class="profile-button" rel="noreferrer">Buy Now!</a>
+              </div>
+            </div>
+          </Col>
+        </Row>
         </Container>
         </section> 
     )

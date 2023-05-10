@@ -1,166 +1,69 @@
-.pg2-button {
-  font-family: "Times New Roman";
-  background-color: blue;
-  font-weight: 700;
-  font-size: 1.2em;
-  color: #ffffff;
-  margin: 10px;
-  padding: 1.2rem 2rem;
-  overflow: hidden;
-  position: relative;
-}
-/* psuedo element: not in the dom, element we can create */
-.button1:before {
-  /* needed for pseudo element */
-  content: "";
-
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: red;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-
-  transform-origin: bottom left;
-  transform: translate(-10rem);
-  transition: transform 0.3s ease-out;
-}
-
-.button1:hover {
-  font-weight: 100;
-  color: #000000;
-  background-color: transparent;
-}
-
-.button1:hover:before {
-  transform: translate(0);
-}
-
-/* BUTTON 2 */
-
-.button2:before {
-  /* needed for pseudo element */
-  content: "";
-
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: greenyellow;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-
-  transform-origin: top;
-  transform: translateY(-10rem);
-  transition: transform 0.3s ease-out;
-}
-
-.button2:hover {
-  color: #000000;
-  background-color: transparent;
-}
-
-.button2:hover:before {
-  transform: translate(0);
-}
-
-/* BUTTON 3 */
-
-.button3:before {
-  /* needed for pseudo element */
-  content: "";
-
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: greenyellow;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-
-  transform-origin: bottom left;
-  transform: translateY(-10rem);
-  transition: transform 0.3s ease-out;
-}
-
-.button3:hover {
-  color: #000000;
-  background-color: transparent;
-}
-
-.button1:hover::before {
-  transform: translate(0);
-}
-
-.button3:hover {
-  transform: scale(1.2);
-  background: chocolate;
-  color: white;
-  transition: transform 1.3s ease-out;
-}
-
-/* Pict */
-
+/* PICT */
 .profile {
-  width: 200px;
-  height: 200px;
-  cursor: pointer;
-}
-
-.profile-text {
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  background-color: yellow;
-  transition: all 0.5s linear;
-  opacity: 0;
-}
-
-.profile-button {
-  color: #fff;
-  text-decoration: none;
-  display: inline-block;
-  padding: 7px 14px;
-  background: #000;
-  box-shadow: 0 0 5px #000;
-  transform: (0);
-  transition: all 0.5s linear;
-  opacity: 0;
-}
-
-.profile img {
-  width: 100%;
-  height: 400px;
-  object-fit: contain;
-  transform: scale(0.8);
-  transition: all 0.7s ease-in-out;
-}
-
-.profile-text h3 {
-  font-size: 2.2rem;
-  transition: scale(0);
-  color: #333;
-  transition: all 0.5s linear;
-  opacity: 0;
-}
-
-.profile:hover img {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .profile-text {
+    width: 300px;
+    height: 300px;  
+    background-color: rgba(255, 85, 0, 0.474);
+    position: absolute;
+    top: 0;
+    left: 0;  
+    padding-top: 80px;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    opacity: 0;
+  }
+  
+  .profile-button {
+    color: #fff;
+    text-decoration: none;  
+    display: inline-block;  
+    padding: 7px 14px;  
+    background: #000;  
+    box-shadow: 0 0 5px #000;
+    transform: (0);
+    transition: all 0.5s linear;
+    opacity: 0;
+  }
+  
+  .profile img {
+    width: 100%;
+    object-fit: contain;
+    transform: scale(0.8);
+    transition: all 0.7s ease-in-out;
+  }
+  
+  .profile-text h3 {
+    font-size: 2.2rem;
+    transform: scale(0);
+    color: #333;
+    transition: all 0.5s linear;
+    opacity: 0;
+  }
+  
+  .profile:hover img {
     transform: scale(10);
     opacity: 0;
-}
-
-.profile:hover .profile-text {
+  }
+  
+  .profile:hover .profile-text {
     opacity: 1;
-}
-
-.profile:hover h2, .profile:hover .profile-button {
+  }
+  
+  .profile:hover h3,
+  .profile:hover .profile-button {
     transform: scale(1);
     opacity: 1;
-}
-
-.profile-button:hover {
+  }
+  
+  .profile-button:hover {
     background-color: white;
     color: black;
-}
+  }
