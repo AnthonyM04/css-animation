@@ -13,7 +13,6 @@ export default function Page2() {
                 <Col><button className='pg2-button button2'>y axis</button></Col>
                 <Col><button className='pg2-button button3'>scale</button></Col>
             </Row>
-
             <Row>
           <Col>
             <div className="profile">
